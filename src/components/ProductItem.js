@@ -1,4 +1,4 @@
-import h from '../modules/ddom.js';
+import h from '../modules/vdom.js';
 import router from '../modules/router.js';
 
 const ProductItem = (state, dispatch, { id, imageUrl, name, price }) => {

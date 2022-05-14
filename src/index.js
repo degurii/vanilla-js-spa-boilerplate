@@ -1,4 +1,4 @@
-import degux from './modules/degux.js';
+import degux from './modules/stateManager.js';
 import router from './modules/router.js';
 
 import reducer from './store/reducer.js';

@@ -4,7 +4,7 @@ const invoke = (state, listeners) => {
   listeners.forEach((listener) => listener(freezed));
 };
 
-const createStore = (reducer) => {
+export const createStore = (reducer) => {
   let listeners = [];
   let state = reducer(undefined, { type: null });
 
@@ -26,8 +26,4 @@ const createStore = (reducer) => {
 
   const getState = () => freeze(state);
   return { subscribe, dispatch, getState };
-};
-
-export default {
-  createStore,
 };
