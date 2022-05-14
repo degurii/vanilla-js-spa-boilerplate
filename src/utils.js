@@ -14,4 +14,13 @@ export const debounce = (fn, wait) => {
   };
 };
 
-export const throttle = (fn, wait) => {};
+export const throttle = (fn, wait) => {
+  let timeout;
+  return (...args) => {
+    if (timeout) return;
+    timeout = setTimeout(() => {
+      fn(...args);
+      timeout = null;
+    }, wait);
+  };
+};
