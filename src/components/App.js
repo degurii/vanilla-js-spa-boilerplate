@@ -1,17 +1,15 @@
-import { createElement as e } from '../modules/vdom.js';
+import { createElement as e } from '../modules/VDom.js';
 
-import { SelectedLanguage } from './SelectedLanguage.js';
-import { SearchInput } from './SearchInput.js';
-import { Suggestion } from './Suggestion.js';
+import { Loading } from './Loading.js';
 
-export const App = (state, dispatch, props) => {
+export const App = (state, dispatch) => {
   const element = e(
     'main',
     { class: 'App' },
-    SelectedLanguage(state, dispatch, null),
-    SearchInput(state, dispatch, null),
-    Suggestion(state, dispatch, null),
+    Loading(state, dispatch),
+    Loading(state, dispatch),
+    Loading(state, dispatch),
   );
-  console.log(element);
+
   return element;
 };

@@ -1,7 +1,5 @@
-import h from '../modules/vdom.js';
+import { createElement as e } from '../modules/VDom.js';
 
-const Loading = () => {
-  return h('div', null, '로딩중!!!');
+export const Loading = () => {
+  return e('div', null, '로딩중!!!');
 };
-
-export default Loading;

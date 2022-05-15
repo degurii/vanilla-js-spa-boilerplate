@@ -1,22 +1,12 @@
-// {
-//     "id": 1,
-//     "name": "커피 컵",
-//     "price": 10000,
-//     "imageUrl": "https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/assignment_image/cafe_coffee_cup.png",
-//     "productOptions": []
-// }
+// 데이터가 복잡한 경우 사용
+export default class {
+  property1;
+  property2;
+  property3;
 
-export default class Product {
-  id;
-  name;
-  price;
-  imageUrl;
-  productOptions;
-  constructor(id, name, price, imageUrl, productOptions) {
-    this.id = id;
-    this.name = name;
-    this.price = price;
-    this.imageUrl = imageUrl;
-    this.productOptions = [...productOptions];
+  constructor(v1, v2, v3) {
+    this.property1 = v1;
+    this.property2 = v2;
+    this.property3 = v3;
   }
 }
